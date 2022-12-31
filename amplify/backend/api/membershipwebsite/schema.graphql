@@ -1,0 +1,23 @@
+type Promo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  body: String
+  image: String
+}
+
+type Post @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  body: String
+  description: String
+  readTime: Int
+  image: String
+}
+
+type Testimonial @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  avatar: String
+  testimony: String
+}
+ 
